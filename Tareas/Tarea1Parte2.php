@@ -34,15 +34,14 @@ print "4: Escriba en  PHP un código que calcule el
 costo total de esta cena en un restaurant: 2 hamburguesas 
 a $4.95 cada una, una chocolatada a $1.95, y una cocacola a  
 85 centavos. El IVA es de 7.5%, y debe dejar una propina 
-prefi
-ja del   16%.";
+prefija del   16%.";
 
 $costoTotal = 0;
 $hamburgesa = 4.95;
 $chocolatada = 1.95;
 $coca = 0.85;
 $propina = 16;
-$IVA = 17;
+$IVA = 7.5;
 
 
 $costoTotal = (((2 * $hamburgesa) + $chocolatada + $coca) * 107.5) / 100;
@@ -70,7 +69,7 @@ a su apellido. Imprima un string conteniendo su nombre
 y apellido separados por un espacio. También imprima la 
 cantidad de caracteres del string.
 <br>";
-//Aca hice lo de la cantidad de caracteres por cada string
+//cambiar
 $first_name= "Juan";
 $last_name = "Segui";
 echo $first_name." ". strlen($first_name)."<br>";
@@ -79,13 +78,15 @@ echo "7: Escriba en PHP un código que use el operador incremental
 (++) y la multiplicación combinada (*=) para imprimir los números 
 del 1 al 5. <br>
 ";
+
 //siclo for
 for ($x = 0 ; $x <= 5 ; $x++ ) {
 
-    echo $x *= 2;
-    "<br>";
+    echo ($x *= 2) . "<br>";
+
 
 };
+
 echo "<br>";
 echo "8: Agregue comentarios a los programas anteriores sobre
  lo que hizo en cada ejercicio. 
